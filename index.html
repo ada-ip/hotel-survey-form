@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Paradise Hotel And Spa Survey Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Paradise Hotel & Spa Survey Form</h1>
+    <p id="description">Thank you for helping us improve our services!</p>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <div class="form-element form-name">
+        <label id="name-label" for="name"><b>Name</b></label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      
+      <div class="form-element">
+        <label id="email-label" for="email"><b>Email</b></label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+       </div>
+      
+      <div class="form-element">
+        <label id="number-label" for="age"><b>Age</b> (optional)</label>
+      <input type="number" id="number" name="number" min="16" max="100" placeholder="Age">
+      </div>
+      
+      <div class="form-element">
+        <p><b>Is this your first visit to this hotel?</b></p>
+      <input type="radio" id="yes-first-visit" name="rbtn-first-visit" value="Yes" checked>
+      <label for="yes-first-visit">Yes</label>
+      
+      
+      <input type="radio" id="no-first-visit" name="rbtn-first-visit" value="No">
+      <label for="no-first-visit">No</label>
+      </div>
+      
+      <div class="form-element">
+        <label for="dropdown"><b>How many nights have you stayed at this hotel?</b></label>
+      <select id="dropdown" name="ddl-number-nights" required>
+        <option value="" selected disabled>Select number of nights</option>
+        <option value="one-two">One or two</option>
+        <option value="three-five">Between three and five</option>
+        <option value="week">A week</option>
+        <option value="more">More than a week</option>
+      </select>
+      </div>
+      
+      <div class="form-element">
+        <label for="ddl-visit-reason"><b>What were the main reason for your visit to this hotel?</b></label>
+      <select id="ddl-visit-reason" name="ddl-visit-reason" required>
+        <option value="" selected disabled>Select a reason</option>
+        <option value="conference-seminar">Attending a conference or seminar</option>
+        <option value="business">Business reasons</option>
+        <option value="leisure">Leisure</option>
+        <option value="rest">Rest</option>
+        <option value="visit">Visiting relatives or friends</option>
+        <option value="other">Other reason</option>
+      </select>
+      </div>
+      
+      <div class="form-element">
+        <p><b>What would you like to see improved?</b></p>
+        <div>
+      <input type="checkbox" id="hotel-staff" name="chk-improvements" value="hotel-staff">
+      <label for="hotel-staff">Hotel staff</label>
+        </div>
+      
+        <div>
+      <input type="checkbox" id="check-in" name="chk-improvements" value="Check-in">
+      <label for="check-in">Check-in process</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="check-out" name="chk-improvements" value="Check-out">
+      <label for="check-out">Check-out process</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="housekeeping-staff" name="chk-improvements" value="housekeeping-staff">
+      <label for="housekeeping-staff">Housekeeping staff</laber>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="cleanliness" name="chk-improvements" value="cleanliness">
+      <label for="cleanliness">Cleanliness of the room</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="equipment" name="chk-improvements" value="equipment-supplies">
+      <label for="equipment">Room equipment and supplies</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="restaurant" name="chk-improvements" value="restaurant-staff">
+      <label for="restaurant">Restaurant staff</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="food" name="chk-improvements" value="food">
+      <label for="food">Quality of the food</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="spa" name="chk-improvements" value="spa">
+      <label for="spa">Spa</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="pool" name="chk-improvements" value="pool">
+      <label for="pool">Pool</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="indoor" name="chk-improvements" value="indoor-activities">
+      <label for="indoor">Indoor activities</label>
+        </div>
+        
+        <div>
+      <input type="checkbox" id="outdoor" name="chk-improvements" value="outdoor-activities">
+      <label for="outdoor">Outdoor activities</label>
+        </div>
+      </div>
+      
+      <div class="form-element">
+        <p><b>Would you recommend this hotel to a friend?</b></p>
+      
+      <input type="radio" id="yes-recommend" name="rbtn-recommend" value="Yes" checked>
+      <label for="yes-recommend">Yes</label>
+      
+      <input type="radio" id="no-recommend" name="rbtn-recommend" value="No">
+      <label for="no-recommend">No</label>
+      </div>
+      
+      <div class="form-element">
+      <label for="txta-comments"><b>If you have any additional comments or suggestions, please write them below</b></label>
+      <textarea id="txta-comments" name="txta-comments" rows="10" maxlength="2500" placeholder="Write your comments here..."></textarea>
+      </div>
+      
+      <div class="form-element">
+        <button type="submit" id="submit" name="submit" value="Submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
