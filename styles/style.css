@@ -8,7 +8,7 @@
     position: relative;
     z-index: 1;
     background-color: #c2d8dc;
-    background-image: url(../images/hotel-background.jpg);
+    background-image: url('../images/hotel-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
